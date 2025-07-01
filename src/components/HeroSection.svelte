@@ -14,7 +14,7 @@
   };
 </script>
 
-<section class="relative min-h-screen py-8 flex items-center justify-center overflow-hidden bg-company-200">
+<section class="relative min-h-screen py-8 flex items-center justify-center overflow-hidden bg-company-700">
   <!-- Decorative gradient orbs -->
   <div class="gradient-orb gradient-orb-1"></div>
   <div class="gradient-orb gradient-orb-2"></div>
@@ -23,7 +23,7 @@
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start justify-center">
       <!-- Left Column - Content -->
-      <div class="text-center lg:text-left lg:pl-16 lg:pt-16">
+      <div class="text-left lg:pl-16 lg:pt-16">
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-tight">
           Join the CometChat<br>
           partner universe
