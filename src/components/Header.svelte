@@ -355,8 +355,9 @@
   }
 </script>
 
+<!-- {headerVisible   ? 'translate-y-0 ' : '-translate-y-full'}  -->
 <header  class="fixed top-0 left-0 right-0 z-50
-        {headerVisible   ? 'translate-y-0 ' : '-translate-y-full'} 
+        {!isMenuOpen ? headerVisible   ? 'translate-y-0 ' : '-translate-y-full' : ''}
          {scrolled ? 'bg-company-700/85 backdrop-blur-md shadow-lg border-b border-gray-800/50 ' : 'bg-transparent'} 
          hover:border-b  hover:border-gray-700/50
          ">
@@ -376,7 +377,7 @@
                     <div class="relative group">
                       <a 
                         href={item.href} 
-                        class="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors relative group flex items-center gap-1"
+                        class="text-gray-300 hover:text-white px-3 py-2 text-sm font-semibold transition-colors relative group flex items-center gap-1"
                         on:mouseenter={() => item.hasDropdown && showDropdown(item.name.toLowerCase())}
                         on:mouseleave={() => !item.hasDropdown && setTimeout(hideDropdown, 100)}
                       >
@@ -460,7 +461,7 @@
               <div class="xl:hidden">
                 <button
                   on:click={toggleMenu}
-                  class="text-gray-300 hover:text-white p-2 rounded-md transition-colors"
+                  class="text-gray-300 rounded-xl bg-gray-900/10 border border-gray-700/30 hover:bg-gray-300/50 hover:text-white px-4 p-2 transition-colors"
                   aria-label="Toggle menu"
                 >
                   <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -656,7 +657,7 @@
                                     class="flex flex-col items-center gap-2 p-2 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
                                     on:click={() => isMenuOpen = false}
                                   >
-                                    <span class="text-2xl">{integration.icon}</span>
+                                    <span class="text-2xl">{@html integration.icon}</span>
                                     <span class="text-gray-300 text-xs text-center">{integration.name}</span>
                                   </a>
                                 {/each}
@@ -673,7 +674,7 @@
                                   class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer mb-2"
                                   on:click={() => isMenuOpen = false}
                                 >
-                                  <span class="text-xl">{resource.icon}</span>
+                                  <span class="text-xl">{@html resource.icon}</span>
                                   <div>
                                     <h4 class="text-white font-medium mb-1">{resource.title}</h4>
                                     <p class="text-gray-400 text-sm">{resource.description}</p>
@@ -694,7 +695,7 @@
                                   href={option.href}
                                   class="flex flex-col items-center gap-4 p-4 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
                                 >
-                                  <span class="text-3xl">{option.icon}</span>
+                                  <span class="text-3xl">{@html option.icon}</span>
                                   <div class="text-center">
                                     <h4 class="text-white font-medium mb-2">{option.title}</h4>
                                     <p class="text-gray-400 text-sm">{option.description}</p>
@@ -712,7 +713,7 @@
                                 href={option.href}
                                 class="flex items-start gap-3 p-4 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
                               >
-                                <span class="text-2xl">{option.icon}</span>
+                                <span class="text-2xl">{@html option.icon}</span>
                                 <div>
                                   <h4 class="text-white font-medium mb-1">{option.title}</h4>
                                   <p class="text-gray-400 text-sm">{option.description}</p>
@@ -735,7 +736,7 @@
                           href={useCase.href}
                           class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
                         >
-                          <span class="text-2xl">{useCase.icon}</span>
+                          <span class="text-2xl">{@html useCase.icon}</span>
                           <div>
                             <h4 class="text-white font-medium mb-1">{useCase.title}</h4>
                             <p class="text-gray-400 text-sm">{useCase.description}</p>
@@ -755,7 +756,7 @@
                             href={section.href}
                             class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
                           >
-                            <span class="text-2xl">{section.icon}</span>
+                            <span class="text-2xl">{@html section.icon}</span>
                             <div>
                               <h4 class="text-white font-medium mb-1">{section.title}</h4>
                               <p class="text-gray-400 text-sm">{section.description}</p>
@@ -773,7 +774,7 @@
                             href={guide.href}
                             class="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer text-center"
                           >
-                            <span class="text-2xl">{guide.icon}</span>
+                            <span class="text-2xl">{@html guide.icon}</span>
                             <h4 class="text-white font-medium text-sm">{guide.title}</h4>
                           </a>
                         {/each}

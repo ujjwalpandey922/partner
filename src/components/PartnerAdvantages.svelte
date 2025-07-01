@@ -75,7 +75,7 @@
     <div class="absolute bottom-20 right-10 w-40 h-40 bg-secondary-500/20 rounded-full blur-xl"></div>
   </div>
 
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-20 relative z-10">
     <div class="text-left mb-16">
       <p class="text-amber-600 text-xl font-semibold tracking-wider mb-4 ">Be a partner</p>
       <h2 class="text-3xl lg:text-5xl font-bold text-white mb-6">
@@ -87,7 +87,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {#each advantages as advantage}
         <div class="group sm:p-4 backdrop-blur-sm   transition-all duration-300    flex flex-col items-start text-left">
-          <div class="w-8 h-8 bg-gradient-to-br from-amber-500/20 to-amber-500/20 text-orange-500 rounded-full flex items-center justify-center text-xl mb-6   transition-transform duration-300">
+          <div class="w-8 h-8 bg-gradient-to-br from-amber-500/20 to-amber-500/20 text-orange-500 rounded-full flex items-center justify-center text-xl mb-2 sm:mb-6   transition-transform duration-300">
             {@html advantage.icon}
           </div>
           <h3 class="text-base sm:text-xl font-semibold text-white   transition-colors">

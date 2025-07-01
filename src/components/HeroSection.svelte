@@ -88,11 +88,11 @@
   <div class="gradient-orb gradient-orb-2"></div>
   <div class="gradient-orb gradient-orb-3"></div>
   
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start justify-center">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-12 py-20 relative z-10">
+    <div class="flex max-xl:flex-col md:gap-6 gap-4 xl:gap-12 lg:gap-16 items-start justify-center">
       <!-- Left Column - Content -->
-      <div class="text-left lg:pl-16 lg:pt-16">
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-tight">
+      <div class="text-left xl:pl-16 xl:pt-16">
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-semibold text-white mb-3 sm:mb-6 leading-none sm:leading-tighter">
           Join the CometChat<br>
           partner universe
         </h1>
@@ -102,14 +102,14 @@
       </div>
 
       <!-- Right Column - Form -->
-      <div class="max-w-lg w-full mx-auto">
+      <div class="xl:max-w-lg w-full mr-auto">
         <div class="bg-dark-800/20 backdrop-blur-2xl rounded-3xl p-4 sm:p-8 border border-dark-700/50 shadow-2xl">
           {#if !isSubmitted}
             <h2 class="text-2xl font-bold text-white mb-6">Became a partner</h2>
             
             <form on:submit={handleSubmit} class="space-y-6">
               <div>
-                <label for="firstName" class="block text-sm font-medium text-gray-300 mb-2">
+                <label for="firstName" class="block text-sm font-semibold text-gray-300 mb-2">
                   First name*
                 </label>
                 <input
@@ -125,7 +125,7 @@
               </div>
 
               <div>
-                <label for="lastName" class="block text-sm font-medium text-gray-300 mb-2">
+                <label for="lastName" class="block text-sm font-semibold text-gray-300 mb-2">
                   Last name*
                 </label>
                 <input
@@ -141,7 +141,7 @@
               </div>
 
               <div>
-                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">
+                <label for="email" class="block text-sm font-semibold text-gray-300 mb-2">
                   Email*
                 </label>
                 <input
@@ -157,7 +157,7 @@
               </div>
 
               <div>
-                <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">
+                <label for="phone" class="block text-sm font-semibold text-gray-300 mb-2">
                   Phone
                 </label>
                 <input
@@ -170,7 +170,7 @@
               </div>
 
               <div>
-                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">
+                <label for="message" class="block text-sm font-semibold text-gray-300 mb-2">
                   Message*
                 </label>
                 <textarea

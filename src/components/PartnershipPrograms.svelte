@@ -28,7 +28,7 @@
     <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
   </div>
 
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-20 relative z-10">
     <div class="text-left sm:px-4 md:text-center mb-16">
       <p class="text-accent-500 text-xl font-bold leading-tighter mb-4">Our programs</p>
       <h2 class="text-3xl lg:text-5xl leading-tighter font-bold text-dark-800 mb-6">

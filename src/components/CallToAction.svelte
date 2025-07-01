@@ -10,7 +10,7 @@
   <div class="absolute top-10 left-10 w-64 h-64 bg-gradient-to-br from-accent-500/30 to-primary-500/30 rounded-full blur-3xl animate-float"></div>
   <div class="absolute bottom-10 right-10 w-48 h-48 bg-gradient-to-br from-secondary-500/30 to-accent-500/30 rounded-full blur-2xl animate-float" style="animation-delay: -2s;"></div>
   
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-20 relative z-10">
     <div class="text-left md:text-center max-w-3xl mx-auto">
       <h2 class="text-3xl lg:text-5xl font-bold text-white mb-2 sm:mb-6">
         {title}
