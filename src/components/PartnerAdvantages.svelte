@@ -86,7 +86,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {#each advantages as advantage}
-        <div class="group sm:p-4 backdrop-blur-sm   transition-all duration-300    flex flex-col items-start text-left">
+        <div class="group backdrop-blur-sm   transition-all duration-300    flex flex-col items-start text-left">
           <div class="w-8 h-8 bg-gradient-to-br from-amber-500/20 to-amber-500/20 text-orange-500 rounded-full flex items-center justify-center text-xl mb-2 sm:mb-6   transition-transform duration-300">
             {@html advantage.icon}
           </div>

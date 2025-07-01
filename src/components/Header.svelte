@@ -526,7 +526,7 @@
               <!-- Bottom Auth Links -->
               <div class="px-6 pb-8 gap-4 flex justify-center items-center mt-auto">
                 <button 
-                  class="w-full max-w-[200px] bg-transparent border border-gray-400/30 hover:bg-gray-700 text-white px-4 py-3 rounded-xl text-sm font-medium transition-colors"
+                  class="w-full max-w-[200px] bg-transparent border border-gray-400/30 hover:bg-gray-700 text-white px-4 py-3 rounded-xl text-base font-semibold transition-colors"
                   on:click={() => isMenuOpen = false}
                 >
                   Log in

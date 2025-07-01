@@ -87,11 +87,13 @@
   <div class="gradient-orb gradient-orb-1"></div>
   <div class="gradient-orb gradient-orb-2"></div>
   <div class="gradient-orb gradient-orb-3"></div>
+  <div class="gradient-orb gradient-orb-4"></div>
+  <div class="gradient-orb gradient-orb-5"></div>
   
   <div class="container mx-auto px-4 sm:px-6 lg:px-12 py-20 relative z-10">
-    <div class="flex max-xl:flex-col md:gap-6 gap-4 xl:gap-12 lg:gap-16 items-start justify-center">
+    <div class="flex max-xl:flex-col md:gap-6 gap-4 xl:gap-36 lg:gap-12 items-start justify-center">
       <!-- Left Column - Content -->
-      <div class="text-left xl:pl-16 xl:pt-16">
+      <div class="text-left xl:pl-24 xl:pt-16">
         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-semibold text-white mb-3 sm:mb-6 leading-none sm:leading-tighter">
           Join the CometChat<br>
           partner universe
@@ -109,7 +111,7 @@
             
             <form on:submit={handleSubmit} class="space-y-6">
               <div>
-                <label for="firstName" class="block text-sm font-semibold text-gray-300 mb-2">
+                <label for="firstName" class="block text-base font-bold text-gray-300 mb-2">
                   First name*
                 </label>
                 <input
@@ -117,7 +119,7 @@
                   id="firstName"
                   bind:value={formData.firstName}
                   placeholder="First Name"
-                  class={`w-full px-4 py-3 bg-dark-800/20 border ${errors.firstName ? 'border-red-500' : 'border-dark-300/20'} rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all`}
+                  class={`w-full px-4 py-3 placeholder:font-bold bg-dark-800/20 border ${errors.firstName ? 'border-red-500' : 'border-dark-300/20'} rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all`}
                 />
                 {#if errors.firstName}
                   <p class="mt-1 text-sm text-red-500">{errors.firstName}</p>
@@ -125,7 +127,7 @@
               </div>
 
               <div>
-                <label for="lastName" class="block text-sm font-semibold text-gray-300 mb-2">
+                <label for="lastName" class="block text-base font-bold text-gray-300 mb-2">
                   Last name*
                 </label>
                 <input
@@ -133,7 +135,7 @@
                   id="lastName"
                   bind:value={formData.lastName}
                   placeholder="Last Name"
-                  class={`w-full px-4 py-3 bg-dark-800/20 border ${errors.lastName ? 'border-red-500' : 'border-dark-300/20'} rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all`}
+                  class={`w-full px-4 py-3 placeholder:font-bold bg-dark-800/20 border ${errors.lastName ? 'border-red-500' : 'border-dark-300/20'} rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all`}
                 />
                 {#if errors.lastName}
                   <p class="mt-1 text-sm text-red-500">{errors.lastName}</p>
@@ -141,7 +143,7 @@
               </div>
 
               <div>
-                <label for="email" class="block text-sm font-semibold text-gray-300 mb-2">
+                <label for="email" class="block text-base font-bold text-gray-300 mb-2">
                   Email*
                 </label>
                 <input
@@ -149,7 +151,7 @@
                   id="email"
                   bind:value={formData.email}
                   placeholder="Your Business Email"
-                  class={`w-full px-4 py-3 bg-dark-800/20 border ${errors.email ? 'border-red-500' : 'border-dark-300/20'} rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all`}
+                  class={`w-full px-4 py-3 placeholder:font-bold bg-dark-800/20 border ${errors.email ? 'border-red-500' : 'border-dark-300/20'} rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all`}
                 />
                 {#if errors.email}
                   <p class="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -157,7 +159,7 @@
               </div>
 
               <div>
-                <label for="phone" class="block text-sm font-semibold text-gray-300 mb-2">
+                <label for="phone" class="block text-base font-bold text-gray-300 mb-2">
                   Phone
                 </label>
                 <input
@@ -165,12 +167,12 @@
                   id="phone"
                   bind:value={formData.phone}
                   placeholder="+1 7201234567"
-                  class="w-full px-4 py-3 bg-dark-800/20 border border-dark-300/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all"
+                  class="w-full px-4 py-3 placeholder:font-bold bg-dark-800/20 border border-dark-300/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all"
                 />
               </div>
 
               <div>
-                <label for="message" class="block text-sm font-semibold text-gray-300 mb-2">
+                <label for="message" class="block text-base font-bold text-gray-300 mb-2">
                   Message*
                 </label>
                 <textarea
@@ -178,7 +180,7 @@
                   bind:value={formData.message}
                   placeholder="How can we help you?"
                   rows="4"
-                  class={`w-full px-4 py-3 bg-dark-800/20 border ${errors.message ? 'border-red-500' : 'border-dark-300/20'} rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all`}
+                  class={`w-full px-4 py-3 placeholder:font-bold bg-dark-800/20 border ${errors.message ? 'border-red-500' : 'border-dark-300/20'} rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all`}
                 ></textarea>
                 {#if errors.message}
                   <p class="mt-1 text-sm text-red-500">{errors.message}</p>
