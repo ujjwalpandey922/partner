@@ -5,7 +5,7 @@
   export let secondaryButton = "Schedule a demo";
 </script>
 
-<section class="py-32 bg-comapny-700 relative overflow-hidden">
+<section class="py-20 md:py-32 bg-comapny-700 relative overflow-hidden">
   <!-- Decorative gradient orbs -->
   <div class="absolute top-10 left-10 w-64 h-64 bg-gradient-to-br from-accent-500/30 to-primary-500/30 rounded-full blur-3xl animate-float"></div>
   <div class="absolute bottom-10 right-10 w-48 h-48 bg-gradient-to-br from-secondary-500/30 to-accent-500/30 rounded-full blur-2xl animate-float" style="animation-delay: -2s;"></div>
@@ -15,15 +15,15 @@
       <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
         {title}
       </h2>
-      <p class="text-xl text-gray-300 mb-12 leading-relaxed">
+      <p class="text-xl text-gray-300/80 mb-12 leading-relaxed max-w-[400px] md:mx-auto font-semibold">
         {description}
       </p>
       
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button class="bg-accent-600 hover:bg-accent-700 text-white font-medium px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-accent-500/25 transform hover:scale-105">
+      <div class="flex gap-4 justify-start  sm:justify-center">
+        <button class="bg-violet-600 hover:bg-violet-700 text-white font-medium px-6 py-3 rounded-xl transition-all duration-300 transform">
           {primaryButton}
         </button>
-        <button class="border border-gray-600 hover:border-gray-500 text-white font-medium px-8 py-4 rounded-lg transition-all duration-300 hover:bg-dark-800">
+        <button class="border border-gray-600 hover:border-gray-500 text-white font-medium px-6 py-3 rounded-xl transition-all duration-300 hover:bg-dark-800">
           {secondaryButton}
         </button>
       </div>

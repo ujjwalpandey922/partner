@@ -68,7 +68,7 @@
   ];
 </script>
 
-<section class="py-20 relative overflow-hidden">
+<section class="py-12 md:py-20 relative overflow-hidden">
   <!-- Background decorative elements -->
   <div class="absolute inset-0 opacity-10">
     <div class="absolute top-20 left-10 w-32 h-32 bg-accent-500/20 rounded-full blur-xl"></div>
@@ -86,11 +86,11 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {#each advantages as advantage}
-        <div class="group p-4 backdrop-blur-sm hover:border-accent-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-accent-500/10 hover:-translate-y-1 flex flex-col items-start text-left">
-          <div class="w-8 h-8 bg-gradient-to-br from-amber-500/20 to-amber-500/20 text-orange-500 rounded-full flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+        <div class="group p-4 backdrop-blur-sm   transition-all duration-300    flex flex-col items-start text-left">
+          <div class="w-8 h-8 bg-gradient-to-br from-amber-500/20 to-amber-500/20 text-orange-500 rounded-full flex items-center justify-center text-xl mb-6   transition-transform duration-300">
             {@html advantage.icon}
           </div>
-          <h3 class="text-xl font-semibold text-white group-hover:text-accent-400 transition-colors">
+          <h3 class="text-xl font-semibold text-white   transition-colors">
             {advantage.title}
           </h3>
           <p class="text-gray-400 leading-relaxed">

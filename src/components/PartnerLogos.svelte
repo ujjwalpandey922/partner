@@ -11,6 +11,7 @@
 
 <section class="py-16 bg-company-700">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-lg font-semibold tracking-wide text-gray-500 text-center opacity-54 mb-8">Trusted by</p>
     <!-- Desktop/Tablet: Static layout -->
     <div class="hidden md:flex flex-wrap items-center justify-center gap-8 lg:gap-12 opacity-70">
       {#each partners as partner}
@@ -50,7 +51,7 @@
 
   .marquee-content {
     display: flex;
-    animation: marquee 5s linear infinite;
+    animation: marquee 3s linear infinite;
     opacity: 0.7;
   }
 

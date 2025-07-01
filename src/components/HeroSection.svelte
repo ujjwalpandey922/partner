@@ -36,7 +36,7 @@
       <!-- Right Column - Form -->
       <div class="max-w-lg w-full mx-auto">
         <div class=" bg-dark-800/20 backdrop-blur-2xl rounded-3xl p-8 border border-dark-700/50 shadow-2xl">
-          <h2 class="text-2xl font-bold text-white mb-6">Become a partner</h2>
+          <h2 class="text-2xl font-bold text-white mb-6">Became a partner</h2>
           
           <form on:submit={handleSubmit} class="space-y-6">
             <div>

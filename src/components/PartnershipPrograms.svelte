@@ -22,7 +22,7 @@
 </script>
 
 
-<section class="py-20 bg-white relative">
+<section class="py-12 md:py-20 bg-white relative">
   <!-- Background pattern -->
   <div class="absolute inset-0 opacity-5">
     <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
@@ -30,7 +30,7 @@
 
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="text-left px-4 md:text-center mb-16">
-      <p class="text-accent-500 text-sm font-bold uppercase tracking-wider mb-4">Our programs</p>
+      <p class="text-accent-500 text-sm font-bold tracking-wider mb-4">Our programs</p>
       <h2 class="text-4xl lg:text-5xl font-bold text-dark-800 mb-6">
         Types of partnerships<br>
         programs
@@ -39,12 +39,12 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
       {#each programs as program}
-        <div class="group bg-white rounded-2xl p-8 transition-all duration-500 hover:-translate-y-2">
-          <div class="mb-6">
-            <div class="w-8 h-8 bg-gradient-to-br {program.color} rounded-full flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform duration-300">
+        <div class="group bg-white rounded-2xl p-2 transition-all duration-500">
+          <div class="mb-1">
+            <div class="w-8 h-8 bg-gradient-to-br {program.color} rounded-full flex items-center justify-center text-xl mb-2 transition-transform duration-300">
                {@html program.icon}
             </div>
-            <h3 class="text-xl font-bold text-dark-800 mb-4 group-hover:text-accent-600 transition-colors">
+            <h3 class="text-xl font-bold text-dark-800 transition-colors">
               {program.title}
             </h3>
           </div>
