@@ -90,21 +90,21 @@
   <div class="gradient-orb gradient-orb-4"></div>
   <div class="gradient-orb gradient-orb-5"></div>
   
-  <div class="container mx-auto px-4 sm:px-6 lg:px-12 py-20 relative z-10">
-    <div class="flex max-xl:flex-col md:gap-6 gap-4 xl:gap-36 lg:gap-12 items-start justify-center">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-12 lg:py-28 container-px py-20 relative z-10">
+    <div class="flex max-xl:flex-col md:gap-6 gap-4 xl:gap-20 items-start justify-center">
       <!-- Left Column - Content -->
       <div class="text-left xl:pl-24 xl:pt-16">
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-semibold text-white mb-3 sm:mb-6 leading-none sm:leading-tighter">
+        <h1 class="text-3xl lg:text-5xl w-full max-w-[528px] font-semibold text-white mb-3 sm:mb-6 leading-none sm:leading-tighter">
           Join the CometChat<br>
           partner universe
         </h1>
-        <p class="text-xl text-gray-300 mb-4 sm:mb-8 leading-none sm:leading-relaxed font-semibold max-w-xl mx-auto lg:mx-0">
+        <p class="lg:text-2xl text-xl text-gray-300 mb-4 xl:mb-8 leading-none sm:leading-relaxed font-semibold  max-w-[528px] mx-auto lg:mx-0">
           Create value for your clients, leveraging our world-class technology. Partner with us and grow your business!
         </p>
       </div>
 
       <!-- Right Column - Form -->
-      <div class="xl:max-w-lg w-full mr-auto">
+      <div class="xl:max-w-[528px] w-full mr-auto">
         <div class="bg-dark-800/20 backdrop-blur-2xl rounded-3xl p-4 sm:p-8 border border-dark-700/50 shadow-2xl">
           {#if !isSubmitted}
             <h2 class="text-2xl font-bold text-white mb-6">Became a partner</h2>

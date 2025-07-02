@@ -37,7 +37,7 @@
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {#each programs as program}
         <div class="group bg-white rounded-2xl p-2 transition-all duration-500">
           <div class="mb-1">

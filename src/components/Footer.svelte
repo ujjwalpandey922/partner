@@ -187,17 +187,14 @@
 
     <!-- Bottom Section -->
     <div class="pt-8 border-t border-dark-800">
-      <div class="flex flex-col-reverse lg:flex-row justify-between items-start gap-4 space-y-4 lg:space-y-0">
-        <!-- Logo and Copyright -->
-        <div class="flex items-center space-x-6">
-         
-          <p class="text-gray-200 text-base font-semibold">
+      <div class="flex flex-col-reverse md:flex-row  justify-between items-start gap-4 ">
+        <!-- Logo and Copyright --> 
+          <p class="text-gray-200 align-text-bottom text-base font-semibold">
             2025 © CometChat
-          </p>
-        </div>
+          </p> 
 
         <!-- Social Links -->
-        <div class="flex flex-wrap gap-6 gap-y-3">
+        <div class="flex flex-wrap items-end gap-6 gap-y-3">
           {#each socialLinks as social}
             <a 
               href={social.href}
